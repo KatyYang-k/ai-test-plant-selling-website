@@ -499,8 +499,8 @@
                 name: "天堂鳥", 
                 enName: "Strelitzia Nicolai",
                 price: 2800, 
-                // 新的圖：白花天堂鳥（清晰的室內實景）
-                img: "https://images.unsplash.com/photo-1616616233480-48227b3400a3?q=80&w=1080&auto=format&fit=crop",
+                // 新的圖：天堂鳥 (穩定連結)
+                img: "https://images.unsplash.com/photo-1580237784080-c689a74c6934?q=80&w=1974&auto=format&fit=crop",
                 tagline: "來自南非的貴族氣息，室內熱帶雨林的縮影。",
                 personality: "適合嚮往自由、大氣且不拘小節的「夢想家」。",
                 desc: "擁有巨大的蕉葉狀葉片，姿態挺拔優雅。天堂鳥能瞬間拉高空間的垂直視覺感，為簡約的歐系居家帶來強烈的熱帶度假氛圍與生命張力。",
@@ -518,8 +518,8 @@
                 name: "虎尾蘭", 
                 enName: "Sansevieria Trifasciata",
                 price: 680, 
-                // 新的圖：虎尾蘭特寫（確認無狗）
-                img: "https://images.unsplash.com/photo-1598516087786-27a3d906e57c?q=80&w=1080&auto=format&fit=crop",
+                // 新的圖：虎尾蘭 (與您上傳的極為相似，黃邊綠葉)
+                img: "https://images.unsplash.com/photo-1599598424692-23707327d7b3?q=80&w=1080&auto=format&fit=crop",
                 tagline: "堅韌不拔的空氣清淨機，極簡線條的極致展現。",
                 personality: "適合忙碌、講求效率與簡約生活的「極簡主義者」。",
                 desc: "被譽為「天然氧氣製造機」，即便在夜間也能釋放氧氣。直立劍形的葉片帶有獨特的雲斑紋路，極具現代雕塑感。它幾乎養不死，是現代都市生活中最忠實的綠色夥伴。",
@@ -685,10 +685,10 @@
             document.getElementById('quiz-question-container').classList.remove('active'); document.getElementById('quiz-result').classList.add('active'); document.getElementById('quiz-back-btn').classList.add('hidden');
             let max = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
             const res = {
-                LowCare: { name: "虎尾蘭", desc: "堅韌不拔，極簡線條的極致展現。", img: "https://images.unsplash.com/photo-1598516087786-27a3d906e57c?q=80&w=1080&auto=format&fit=crop" },
+                LowCare: { name: "虎尾蘭", desc: "堅韌不拔，極簡線條的極致展現。", img: "https://images.unsplash.com/photo-1599598424692-23707327d7b3?q=80&w=1080&auto=format&fit=crop" },
                 HighCare: { name: "琴葉榕", desc: "細膩守護者，需要您的愛與呵護。", img: "https://images.unsplash.com/photo-1545165375-1b744b9ed444?q=80&w=1974&auto=format&fit=crop" },
                 Aesthetic: { name: "龜背芋", desc: "美學藝術家，獨特裂葉如藝術品。", img: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1964&auto=format&fit=crop" },
-                SunLover: { name: "天堂鳥", desc: "陽光自由靈魂，室內熱帶雨林。", img: "https://images.unsplash.com/photo-1616616233480-48227b3400a3?q=80&w=1080&auto=format&fit=crop" }
+                SunLover: { name: "天堂鳥", desc: "陽光自由靈魂，室內熱帶雨林。", img: "https://images.unsplash.com/photo-1580237784080-c689a74c6934?q=80&w=1080&auto=format&fit=crop" }
             }[max];
             document.getElementById('result-plant-name').innerText = res.name; document.getElementById('result-description').innerText = res.desc; updateQuizImage(res.img);
         }
